@@ -5,7 +5,6 @@ interface ObserverProps {
   onContentEndVisible: () => void;
 }
 
-class Options {
 // Опишіть Props
 export function Observer({ children, onContentEndVisible }: ObserverProps) {
   // Вкажіть правильний тип для useRef зверніть увагу, в який DOM елемент ми його передаємо
