@@ -6,11 +6,6 @@ interface ObserverProps {
 }
 
 class Options {
-  rootMargin = "0px";
-  threshold = 1.0;
-  root = null;
-}
-
 // Опишіть Props
 export function Observer({ children, onContentEndVisible }: ObserverProps) {
   // Вкажіть правильний тип для useRef зверніть увагу, в який DOM елемент ми його передаємо
@@ -18,7 +13,7 @@ export function Observer({ children, onContentEndVisible }: ObserverProps) {
 
   useEffect(() => {
     // Вкажіть правильний тип для options, підказка, клас також можна вказувати як тип
-    const options: Options = {
+    const options: IntersectionObserverInit = {
       rootMargin: "0px",
       threshold: 1.0,
       root: null,
